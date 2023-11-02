@@ -1,8 +1,9 @@
-package com.board.board.domain;
+package com.board.board.domain.post;
 
+import com.board.board.domain.image.Image;
 import jakarta.persistence.*;
 
-import static jakarta.persistence.GenerationType.*;
+import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
 public class PostImage {

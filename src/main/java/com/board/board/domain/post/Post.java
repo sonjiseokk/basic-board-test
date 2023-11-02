@@ -1,5 +1,8 @@
-package com.board.board.domain;
+package com.board.board.domain.post;
 
+import com.board.board.domain.BaseTimeEntity;
+import com.board.board.domain.comment.Comment;
+import com.board.board.domain.user.User;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -9,7 +12,7 @@ import static jakarta.persistence.FetchType.*;
 import static jakarta.persistence.GenerationType.*;
 
 @Entity
-public class Post extends BaseTimeEntity{
+public class Post extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     @Column(name = "post_id")

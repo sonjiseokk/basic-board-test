@@ -1,8 +1,9 @@
-package com.board.board.domain;
+package com.board.board.domain.post;
 
+import com.board.board.domain.user.User;
 import jakarta.persistence.*;
 
-import static jakarta.persistence.FetchType.*;
+import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
 public class PostLike {
