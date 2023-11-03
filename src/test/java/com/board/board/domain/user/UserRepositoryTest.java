@@ -1,7 +1,8 @@
 package com.board.board.domain.user;
 
-import com.board.board.domain.image.Image;
-import com.board.board.domain.image.ImageRepository;
+import com.board.board.web.domain.image.Image;
+import com.board.board.web.domain.user.User;
+import com.board.board.web.domain.user.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,22 +19,13 @@ class UserRepositoryTest {
     @Autowired
     private UserRepository userRepository;
     @Autowired
-    private ImageRepository imageRepository;
-    @Autowired
     private TestEntityManager entityManager;
     @Test
     @DisplayName("유저 저장")
     @Transactional
     void 유저_저장() throws Exception {
         //given
-
-        /**
-         * 일단 mock여도 이미지가 저장되어야 하므로
-         * 이미지 레포지토리를 사용하여 미리 저장
-         */
         Image mockImage = mock(Image.class);
-        imageRepository.save(mockImage);
-
         User user = User.builder()
                 .email("aaa@bbb.com")
                 .username("test")

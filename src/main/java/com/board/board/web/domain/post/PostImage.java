@@ -1,6 +1,6 @@
-package com.board.board.domain.post;
+package com.board.board.web.domain.post;
 
-import com.board.board.domain.image.Image;
+import com.board.board.web.domain.image.Image;
 import jakarta.persistence.*;
 
 import static jakarta.persistence.GenerationType.IDENTITY;

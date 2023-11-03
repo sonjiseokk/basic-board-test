@@ -1,7 +1,7 @@
-package com.board.board.domain.image;
+package com.board.board.web.domain.image;
 
-import com.board.board.domain.BaseTimeEntity;
-import com.board.board.domain.post.PostImage;
+import com.board.board.web.domain.BaseTimeEntity;
+import com.board.board.web.domain.post.PostImage;
 import jakarta.persistence.*;
 import lombok.Builder;
 
