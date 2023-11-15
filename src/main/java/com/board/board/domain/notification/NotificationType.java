@@ -1,4 +1,4 @@
-package com.board.board.web.domain.notification;
+package com.board.board.domain.notification;
 
 public enum NotificationType {
     COMMENT, TAG

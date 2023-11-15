@@ -1,8 +1,8 @@
-package com.board.board.web.domain.comment;
+package com.board.board.domain.comment;
 
-import com.board.board.web.domain.BaseTimeEntity;
-import com.board.board.web.domain.post.Post;
-import com.board.board.web.domain.user.User;
+import com.board.board.domain.BaseTimeEntity;
+import com.board.board.domain.post.Post;
+import com.board.board.domain.user.User;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
-package com.board.board.web.dto.user;
+package com.board.board.api.dto.user;
 
-import com.board.board.web.domain.image.Image;
-import com.board.board.web.domain.user.User;
+import com.board.board.domain.image.Image;
+import com.board.board.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

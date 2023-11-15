@@ -1,8 +1,6 @@
 package com.board.board.domain.user;
 
-import com.board.board.web.domain.image.Image;
-import com.board.board.web.domain.user.User;
-import com.board.board.web.domain.user.UserRepository;
+import com.board.board.domain.image.Image;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

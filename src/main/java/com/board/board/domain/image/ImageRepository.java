@@ -1,4 +1,4 @@
-package com.board.board.web.domain.image;
+package com.board.board.domain.image;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

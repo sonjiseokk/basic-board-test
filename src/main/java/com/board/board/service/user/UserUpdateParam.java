@@ -1,6 +1,6 @@
 package com.board.board.service.user;
 
-import com.board.board.web.domain.image.Image;
+import com.board.board.domain.image.Image;
 import lombok.Builder;
 import lombok.Getter;
 

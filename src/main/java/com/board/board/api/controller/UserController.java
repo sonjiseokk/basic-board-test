@@ -1,4 +1,4 @@
-package com.board.board.web.controller;
+package com.board.board.api.controller;
 
 import com.board.board.service.user.UserService;
 import lombok.RequiredArgsConstructor;

@@ -1,9 +1,9 @@
 package com.board.board.service.user;
 
-import com.board.board.web.domain.user.User;
-import com.board.board.web.domain.user.UserRepository;
-import com.board.board.web.dto.user.UserSaveRequestDto;
-import com.board.board.web.dto.user.UserUpdateRequestDto;
+import com.board.board.domain.user.User;
+import com.board.board.domain.user.UserRepository;
+import com.board.board.api.dto.user.UserSaveRequestDto;
+import com.board.board.api.dto.user.UserUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

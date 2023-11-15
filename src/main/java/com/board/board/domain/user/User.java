@@ -1,8 +1,8 @@
-package com.board.board.web.domain.user;
+package com.board.board.domain.user;
 
 import com.board.board.service.user.UserUpdateParam;
-import com.board.board.web.domain.image.Image;
-import com.board.board.web.domain.post.PostLike;
+import com.board.board.domain.image.Image;
+import com.board.board.domain.post.PostLike;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
+import static jakarta.persistence.CascadeType.*;
 import static jakarta.persistence.FetchType.LAZY;
 
 @Entity(name = "users")
@@ -25,7 +26,7 @@ public class User {
     private String password;
     @OneToMany(mappedBy = "user")
     private List<PostLike> likes = new ArrayList<>();
-    @OneToOne(fetch = LAZY,cascade = CascadeType.ALL)
+    @OneToOne(fetch = LAZY,cascade = ALL)
     @JoinColumn(name = "image_id")
     private Image profileImage;
     @Builder

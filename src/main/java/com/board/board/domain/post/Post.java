@@ -1,8 +1,8 @@
-package com.board.board.web.domain.post;
+package com.board.board.domain.post;
 
-import com.board.board.web.domain.BaseTimeEntity;
-import com.board.board.web.domain.comment.Comment;
-import com.board.board.web.domain.user.User;
+import com.board.board.domain.BaseTimeEntity;
+import com.board.board.domain.comment.Comment;
+import com.board.board.domain.user.User;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -26,4 +26,6 @@ public class Post extends BaseTimeEntity {
     private List<PostImage> postImages = new ArrayList<>();
     @OneToMany(mappedBy = "post", fetch = LAZY)
     private List<Comment> comments = new ArrayList<>();
+    @OneToMany(mappedBy = "post", fetch = LAZY)
+    private List<Tag> tags = new ArrayList<>();
 }

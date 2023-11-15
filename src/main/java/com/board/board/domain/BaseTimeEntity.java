@@ -1,4 +1,4 @@
-package com.board.board.web.domain;
+package com.board.board.domain;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
